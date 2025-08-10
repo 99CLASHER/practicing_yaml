@@ -1,0 +1,8 @@
+name: Laravel CI
+on: push
+jobs:
+  hello:
+    runs-on: unbuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello from Github Actions!"
