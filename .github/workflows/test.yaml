@@ -2,7 +2,7 @@ name: Laravel CI
 on: push
 jobs:
   hello:
-    runs-on: unbuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Print Hello
         run: echo "Hello from Github Actions!"
