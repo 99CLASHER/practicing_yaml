@@ -1,8 +1,14 @@
 name: Laravel CI
 on: push
 jobs:
-  hello:
+  laravel-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello
-        run: echo "Hello from Github Actions!"
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      - name: Php Version
+        run: php -v
+      
+      - name: Composer Version
+        run: composer --version
